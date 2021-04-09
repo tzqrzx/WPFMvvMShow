@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AccountViewModel.cs" />
+    <Compile Remove="BillViewModel.cs" />
+    <Compile Remove="ConsumerViewModel.cs" />
+    <Compile Remove="PlanViewModel.cs" />
+    <Compile Remove="ReportViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="EPP.PresentationCore" Version="1.0.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.0.0" />
+    <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.0.0-preview4" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Consumption.EFCore\Consumption.EFCore.csproj" />
+    <ProjectReference Include="..\Consumption.Shared\Consumption.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
